@@ -1,0 +1,17 @@
+{
+    "systems": [{
+        "id": 1,
+        "system": "Jenkins",
+        "status": "Operational"
+    },
+    {
+        "id": 2,
+        "system": "Jira",
+        "status": "Operational"
+    },
+    {
+        "id": 3,
+        "system": "SonarQube",
+        "status": "Scheduled Maintenance"
+    }]
+}
