@@ -1,85 +1,151 @@
-div {
-    display: block;
-}
-
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 768px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    color: #000000;
+    background-color: #f6f8fa;
 }
 
 .header {
-    margin-bottom: 30px;
-    padding-right: 0;
-    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.header .title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.status {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    border-radius: 5px;
+    background-color: #28a845;
+    color: white;
+}
+
+.status .left {
+    padding-left: 2vh;
+    font-weight: bold;
+}
+
+.status .right {
+    padding-right: 2vh;
+}
+
+.metrics {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    border: 0.5px solid #676769;
+    border-radius: 5px;
+}
+
+.metrics .metric {
+    text-align: center;
+    padding: 2vh;
+}
+
+.metrics .metric .value {
+    line-height: 1;
+    font-size: 60px;
+}
+
+.metrics .metric .type {
+    padding-top: 20px;
+}
+
+.integrations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 5vh;
+}
+
+.integrations .application {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    line-height: 5vh;
+    border: 0.5px solid #676769;
+    border-radius: 5px;
+}
+
+.integrations .application .name {
+    width: 100%;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.integrations .application .app-status {
+    width: 15vh;
+    text-align: center;
+    background-color: #28a845;
+    color: white;
+}
+
+.upcoming {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 5vh;
+    border: 0.5px solid #676769;
+    border-radius: 5px;
+}
+
+.upcoming .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1eaaf0;
+    height: 5vh;
+    line-height: 5vh;
+    color: white;
+}
+
+.upcoming .event-name {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.upcoming .event-type {
+    width: 30vh;
     text-align: center;
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
+.upcoming .event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
 }
 
-.top_bar {
-    background-color: #27ae60;
-    color: #fff;
-    border: 0;
-    height: 52px;
+.upcoming .event-details .details {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.panel {
-    background: none;
-    border: 0;
-    height: 52px;
+.upcoming .event-details .details .detail-name {
+    width: 20vh;
+    text-align: left;
+    padding-left: 10px;
 }
 
-.panel-default {
-    border-color: #ddd;
-}
-
-.panel {
-    margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
-    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
-}
-
-.panel-body {
-    padding: 15px;
-}
-
-.col-xs-12 {
+.upcoming .event-details .details .detail-value {
     width: 100%;
+    padding-right: 10px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-    float: left;
-}
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.white {
-    color: #fff;
-    font-size: 16px;
-}
-
-.pull-right {
-    float: right;
-}
-
-p {
-    display: block;
-    margin: 0 0 10px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+.footer {
+    height: 5vh;
+    margin-top: 5vh;
 }
